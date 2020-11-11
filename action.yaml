@@ -1,4 +1,4 @@
-name: 'hello/world'
+name: 'hello-my-world'
 description: 'Greet someone and record the time'
 inputs:
   who:
