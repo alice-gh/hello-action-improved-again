@@ -1,2 +1,14 @@
 name: 'deployphp/action'
 description: 'Deploy with Deployer'
+inputs:
+  private-key:
+    description: 'Private key'
+    required: true
+  known-hosts:
+    description: 'Known hosts'
+    required: false
+    default: ''
+  dep:
+    description: 'Deployer command',
+    required: false
+    default: ''
