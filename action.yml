@@ -1,13 +1,20 @@
 name: 'deployphp/action'
-description: 'Greet someone and record the time'
+description: 'Deploy with Deployer'
 inputs:
-  who:
-    description: 'who to greet'
+  private-key:
+    description: 'Private key'
     required: true
-    default: 'world'
-outputs:
-  time:
-    description: 'time we greeted you'
+  known-hosts:
+    description: 'Known hosts'
+    required: false
+    default: ''
+  dep:
+    description: 'Deployer command',
+    required: false
+    default: ''
 runs:
   using: 'node12'
   main: 'index.js'
+branding:
+  color: blue
+  icon: server
